@@ -14,6 +14,10 @@ What toppings would you like on your pizza?
 </div>	
 <form method="post" action="toppings">
 <input type="text" name="toppings">
+<input type="hidden" name="first_name" value=<%= first_name %>>
+<input type="hidden" name="pizzatype" value=<%= pizzatype %>>
+<input type="hidden" name="crust_type" value=<%= crust_type %>>
+<input type="hidden" name="toppings" value=<%= toppngs %>>
 <br>
 <br>
 <input type="submit">
