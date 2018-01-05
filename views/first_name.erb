@@ -1,0 +1,24 @@
+<html>
+<head>
+<title>Pizza Palace</title>
+<link href="<%= url('/css/style.css') %>" rel="stylesheet" type="text/css" />
+</head>
+<body>	
+<center>	
+<div class="welcome"> Welcome to the Pizza Palace <%= first_name %>. 
+<br>
+<img alt="logo" src="/img/logo.gif" width="200" height="150" />
+<br>
+What kind of pizza would you like?
+<br>
+</div>	
+<form method="post" action="pizza_type">
+<input type="text" name="pizza_type">
+<br>
+<br>
+<input type="submit">
+</form>
+<img alt="pizza" src="/img/pizza.jpg" width="400" height="400" />
+</center>
+</body>
+</html>
