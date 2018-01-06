@@ -15,8 +15,8 @@ get '/pizza_type' do
 end
 
 post '/pizza_type' do
-    first_name = params[:first_name]
     pizza_type = params[:pizza_type]
+    first_name = params[:first_name]
     redirect '/crust_type?first_name=' + first_name + '&pizza_type=' + pizza_type
 end
 
@@ -26,10 +26,10 @@ get '/crust_type' do
     erb :crust_type, :locals => {:first_name => first_name, :pizza_type => pizza_type}
 end
 
-post '/crust' do
+post '/crust_type' do
+    crust_type = params[:crust_type]
     first_name = params[:first_name]
     pizza_type = params[:pizza_type]
-    crust_type = params[:crust_type]
     redirect '/toppings?first_name=' + first_name + '&pizza_type=' + pizza_type + '&crust_type' + crust_type
 end
 
@@ -41,10 +41,10 @@ get '/toppings' do
 end
 
 post '/toppings' do
+    toppings = params[:toppings]
     first_name = params[:first_name]
     pizza_type = params[:pizza_type]
     crust_type = params[:crust_type]
-    toppings = params[:toppings]
     redirect '/final_order?first_name=' + first_name + '&pizza_type=' + pizza_type + '&crust_type=' + crust_type + '&toppings=' + toppings
 end
 

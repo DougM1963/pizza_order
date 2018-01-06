@@ -5,7 +5,7 @@
 </head>
 <body>	
 <center>	
-<div class="welcome"> You want a <%= pizza_type %>. 	
+<div class="welcome"> You want a <%= pizza_type %> pizza. 	
 <br>
 <img alt="logo" src="/img/logo.gif" width="200" height="150" />
 <br>
@@ -15,8 +15,7 @@ What type of crust with that?
 <form method="post" action="crust_type">
 <input type="text" name="crust_type">
 <input type="hidden" name="first_name" value=<%= first_name %>>
-<input type="hidden" name="pizzatype" value=<%= pizzatype %>>
-<input type="hidden" name="crust_type" value=<%= crust_type %>>
+<input type="hidden" name="pizza_type" value=<%= pizza_type %>>
 <br>
 <br>
 <input type="submit">
