@@ -30,7 +30,7 @@ post '/crust_type' do
     crust_type = params[:crust_type]
     first_name = params[:first_name]
     pizza_type = params[:pizza_type]
-    redirect '/toppings?first_name=' + first_name + '&pizza_type=' + pizza_type + '&crust_type' + crust_type
+    redirect '/toppings?crust_type=' + crust_type + '&first_name=' + first_name + '&pizza_type=' + pizza_type
 end
 
 get '/toppings' do
